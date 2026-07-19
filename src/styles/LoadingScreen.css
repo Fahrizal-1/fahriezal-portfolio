@@ -1,0 +1,33 @@
+.loading-screen {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--background);
+
+  z-index: 99999;
+
+  transition: opacity 0.5s ease;
+}
+
+.loading-screen h2 {
+  margin-top: 30px;
+
+  font-size: 32px;
+
+  color: var(--primary);
+
+  font-weight: 700;
+}
+
+.loading-screen p {
+  margin-top: 10px;
+
+  color: var(--text-light);
+
+  font-size: 16px;
+}

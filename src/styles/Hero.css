@@ -1,0 +1,347 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-badge {
+  display: inline-block;
+
+  background: #dbeafe;
+
+  color: var(--primary);
+
+  padding: 8px 18px;
+
+  border-radius: 50px;
+
+  margin-bottom: 20px;
+
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: var(--primary);
+}
+
+.hero h2 {
+  color: var(--text-light);
+
+  margin-bottom: 20px;
+
+  font-weight: 500;
+}
+
+.hero p {
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+
+  color: var(--text-light);
+}
+
+.hero-buttons {
+  display: flex;
+
+  gap: 20px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+
+  border: none;
+
+  padding: 15px 28px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+}
+
+.btn-secondary {
+  background: white;
+
+  border: 2px solid var(--primary);
+
+  color: var(--primary);
+
+  padding: 15px 28px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+
+  color: white;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-placeholder {
+  width: 350px;
+
+  height: 350px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 120px;
+
+  color: white;
+
+  box-shadow: var(--shadow);
+}
+
+.hero-bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-bg-circle-1 {
+  width: 300px;
+  height: 300px;
+  background: rgba(37, 99, 235, 0.15);
+  top: -80px;
+  left: -80px;
+}
+
+.hero-bg-circle-2 {
+  width: 350px;
+  height: 350px;
+  background: rgba(124, 58, 237, 0.12);
+  bottom: -120px;
+  right: -120px;
+}
+
+.profile-wrapper {
+  position: relative;
+
+  width: min(420px, 100%);
+  aspect-ratio: 1 / 1;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+  padding: 8px;
+
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.25);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  background: white;
+}
+
+.circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  background: #2563eb33;
+}
+
+.one {
+  width: 25px;
+  height: 25px;
+
+  top: 20px;
+  left: -10px;
+}
+
+.two {
+  width: 18px;
+  height: 18px;
+
+  bottom: 50px;
+  right: -15px;
+}
+
+.three {
+  width: 35px;
+  height: 35px;
+
+  top: 70%;
+  left: -25px;
+}
+
+/* ===== Hero Social ===== */
+
+.hero-social {
+  display: flex;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.hero-social a {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #2563eb;
+
+  font-size: 22px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.hero-social a:hover {
+  transform: translateY(-6px);
+
+  background: #2563eb;
+
+  color: white;
+}
+
+.typing-text {
+  color: #2563eb;
+
+  min-height: 45px;
+
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+
+  border: none;
+  padding: 15px 28px;
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: var(--transition);
+
+  text-decoration: none; /* Tambahkan ini */
+  display: inline-flex; /* Agar tampil seperti tombol */
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-secondary {
+  background: white;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+
+  padding: 15px 28px;
+  border-radius: 12px;
+
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .hero-content {
+    order: 2;
+  }
+
+  .hero-image {
+    order: 1;
+  }
+
+  .hero-bg-circle {
+    display: none;
+  }
+
+  .profile-wrapper {
+    width: 260px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-social {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}

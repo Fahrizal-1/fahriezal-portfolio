@@ -1,0 +1,77 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/* ===========================
+   CSS Variables
+=========================== */
+:root {
+  /* Background */
+  --background: #f8fafc;
+  --surface: #ffffff;
+
+  /* Primary */
+  --primary: #2563eb;
+  --secondary: #7c3aed;
+
+  /* Text */
+  --text: #1e293b;
+  --text-light: #64748b;
+
+  /* Border */
+  --border: #e2e8f0;
+
+  /* Shadow */
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  --radius: 18px;
+  --transition: 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --background: #0f172a;
+  --surface: #1e293b;
+
+  --primary: #3b82f6;
+  --secondary: #8b5cf6;
+
+  --text: #f8fafc;
+  --text-light: #cbd5e1;
+
+  --border: #334155;
+
+  --shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+}
+
+/* ===========================
+   Reset
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--background);
+  color: var(--text);
+
+  transition:
+    background 0.35s ease,
+    color 0.35s ease;
+}
+
+* {
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}

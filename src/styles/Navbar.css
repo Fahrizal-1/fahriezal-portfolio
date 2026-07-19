@@ -1,0 +1,175 @@
+.navbar {
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  backdrop-filter: blur(12px);
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 18px 24px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+
+  font-weight: 700;
+
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+
+  gap: 32px;
+
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+
+  color: var(--text);
+
+  transition: var(--transition);
+
+  font-weight: 500;
+
+  position: relative;
+
+  text-decoration: none;
+
+  color: var(--text);
+
+  transition: 0.3s ease;
+
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  color: var(--primary);
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -6px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: var(--primary);
+
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.menu-icon {
+  display: none;
+
+  font-size: 1.8rem;
+
+  color: var(--primary);
+
+  cursor: pointer;
+
+  margin-left: auto;
+
+  transition: var(--transition);
+}
+
+.theme-toggle {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #eff6ff;
+  color: var(--primary);
+
+  cursor: pointer;
+
+  font-size: 18px;
+
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(15deg);
+  background: var(--primary);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: sticky;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+.nav-links.active {
+  display: flex;
+
+  flex-direction: column;
+
+  position: absolute;
+
+  top: 100%;
+
+  left: 0;
+
+  width: 100%;
+
+  background: white;
+
+  padding: 20px 0;
+
+  gap: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
