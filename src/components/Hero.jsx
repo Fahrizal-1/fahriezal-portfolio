@@ -29,7 +29,7 @@ function Hero() {
           </h1>
 
           <h2 className="typing-text">
-            <TypeAnimation sequence={["Cyber Security Enthusiast", 2000, "Digital Forensics Learner", 2000, "OSINT Enthusiast", 2000, "Web Developer", 2000]} wrapper="span" speed={50} repeat={Infinity} />
+            <TypeAnimation sequence={["Cyber Security Enthusiast", 2000, "Digital Forensics Learner", 2000, "OSINT Enthusiast", 2000, "IT Support", 2000]} wrapper="span" speed={50} repeat={Infinity} />
           </h2>
 
           <p>
