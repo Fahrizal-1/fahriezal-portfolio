@@ -60,14 +60,14 @@ function Navbar() {
               </li>
 
               <li>
-                <a href="#projects" className={activeSection === "projects" ? "active" : ""}>
-                  Projects
+                <a href="#experience" className={activeSection === "experience" ? "active" : ""}>
+                  Experience
                 </a>
               </li>
 
               <li>
-                <a href="#experience" className={activeSection === "experience" ? "active" : ""}>
-                  Experience
+                <a href="#projects" className={activeSection === "projects" ? "active" : ""}>
+                  Projects
                 </a>
               </li>
 

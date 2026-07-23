@@ -63,14 +63,6 @@ function Experience() {
               <h4>{experience.position}</h4>
 
               <p>{experience.description}</p>
-
-              <div className="experience-skills">
-                {experience.skills.map((skill, index) => (
-                  <span key={index} className="skill-badge">
-                    {skill}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
         ))}

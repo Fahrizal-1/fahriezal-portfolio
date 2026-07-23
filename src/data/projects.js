@@ -1,15 +1,22 @@
-import siMagang from "../assets/projects/simagang.png";
-import webMasjid from "../assets/projects/masjid.png";
+import simagang from "../assets/projects/simagang.png";
+import masjid from "../assets/projects/masjid.png";
 
-export const projects = [
+const projects = [
   {
     id: 1,
-    title: "SI-MAGANG BNNP DIY",
+    title: "SI-Magang BNNP DIY",
+    badge: "Featured",
+    year: "2026",
+
+    image: simagang,
+
     description: "Sistem Absensi Mahasiswa Magang berbasis web menggunakan PHP, MySQL, Bootstrap, GPS, dan Camera Selfie.",
-    image: siMagang,
-    technologies: ["PHP", "Bootstrap", "MySQL", "JavaScript"],
-    github: "https://github.com/Fahrizal-1/absensi-magang-bnnp",
-    demo: "#",
+
+    tech: ["PHP", "MySQL", "Bootstrap", "JavaScript", "GPS", "Camera"],
+
+    github: "https://github.com/Fahrizal-1",
+
+    demo: "http://scoop-annuity-rethink.ngrok-free.dev/absensi_magang_bnnp/login.php",
   },
 
   {
@@ -17,14 +24,20 @@ export const projects = [
 
     title: "Website Profile Masjid Al-Mustaqim Mantrijeron",
 
-    description: "Website profile Masjid Al - Mustaqim Mantrijeron berbasis Laravel 12. yang dilengkapi fitur CRUD,CMS, dan laporan keuangan secara publik",
+    badge: "Latest",
 
-    technologies: ["PHP", "Laragon", "Laravel 12"],
+    year: "2026",
 
-    image: webMasjid,
+    image: masjid,
 
-    github: "#",
+    description: "Website profile Masjid Al-Mustaqim Mantrijeron berbasis Laravel 12 yang dilengkapi fitur CRUD, CMS, dan laporan keuangan publik.",
+
+    tech: ["Laravel 12", "PHP", "HeidiSQL", "Bootstrap"],
+
+    github: "https://github.com/Fahrizal-1",
 
     demo: "#",
   },
 ];
+
+export default projects;

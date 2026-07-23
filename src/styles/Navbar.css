@@ -154,6 +154,30 @@
     display: none;
   }
 
+  .nav-links a::after {
+    content: none;
+  }
+
+  .nav-links a {
+    display: block;
+
+    padding: 14px 20px;
+
+    border-radius: 12px;
+  }
+
+  .nav-links a:hover {
+    background: #eef4ff;
+
+    color: #2563eb;
+  }
+
+  .nav-links a.active {
+    background: #2563eb;
+
+    color: white;
+  }
+
   .nav-links.active {
     display: flex;
     flex-direction: column;
@@ -165,17 +189,16 @@
 
     width: 100%;
 
-    background: var(--card);
+    background: #ffffff;
 
-    padding: 25px 0;
+    padding: 25px;
 
     gap: 20px;
 
-    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    z-index: 9999;
   }
-
   .theme-toggle {
     width: 42px;
     height: 42px;

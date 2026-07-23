@@ -26,7 +26,7 @@ function Footer() {
         <div className="footer-bottom">
           <p>© 2026 Fahriezal. All Rights Reserved.</p>
 
-          <p>Designed and Developed by Fahriezal using React & Framer Motion ❤️ </p>
+          <p>Designed and Developed by Fahriezal using ❤️ in Yogyakarta City </p>
         </div>
       </div>
     </footer>
